@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer components{
+    .custom-container{
+        @apply max-w-[1200px] mx-auto !important 
+    }
+    
+
+}
+@layer base {
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@layer utilities {
+    .hover-child-border-pink:hover > * {
+        --tw-border-opacity: 1;
+        border-color: rgb(190 24 93 / var(--tw-border-opacity));
+    }
+}
+
+@keyframes scroll {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
+  }
+
+
+.custom-border {
+    border-image: linear-gradient(to right, #ec4899, #c026d3) 1;
+  }
