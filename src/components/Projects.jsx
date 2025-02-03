@@ -54,14 +54,14 @@ const Projects = () => {
             <div className="absolute inset-0 group-hover:bg-black/70 transition-all duration-300"></div>
 
             {/* Content (Initially Hidden) */}
-            <div className="relative opacity-0 p-6 h-full w-full flex flex-col justify-center items-center text-white translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center">
+            <div className="relative sm:opacity-0 p-6 h-full w-full flex flex-col justify-center items-center text-white translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center">
               <p className="text-xl font-semibold">{p.name}</p>
               <p className="text-gray-300 mt-2">{p.description}</p>
               <div className="flex gap-4 mt-4 absolute right-5 bottom-[10px]">
                 {p.links.map((l, i) => (
                   <a
                     key={i}
-                    className="py-2 px-4 rounded-md flex gap-2 items-center text-white hover:text-blue-300 transition"
+                    className="py-2 px-4   text-black/30 rounded-md flex gap-2 items-center  hover:text-blue-300 transition"
                     href={l.link}
                     target="_blank"
                   >

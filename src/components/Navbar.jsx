@@ -86,33 +86,39 @@ export default function Navbar() {
         >
           <div className="space-y-3 px-2 pt-2 pb-3">
             <a
-              href="#"
+              href="#about"
               className="block rounded-md px- py-2 text-base font-medium text-[#4A5568] drop-shadow-2xl"
             >
-              Dashboard
+              About
             </a>
             <a
-              href="#"
+              href="#service"
               className="block rounded-md px-3 py-2 text-base font-medium text-[#4A5568] drop-shadow-2xl"
             >
-              Team
+              Services
             </a>
             <a
-              href="#"
+              href="#projects"
               className="block rounded-md px-3 py-2 text-base font-medium text-[#4A5568] drop-shadow-2xl"
             >
               Projects
             </a>
             <a
-              href="#"
+              href="#approach"
               className="block rounded-md px-3 py-2 text-base font-medium text-[#4A5568] drop-shadow-2xl"
             >
-              Calender
+              Approach
+            </a>
+            <a
+              href="#stack"
+              className="block rounded-md px-3 py-2 text-base font-medium text-[#4A5568] drop-shadow-2xl"
+            >
+              Stack
             </a>
 
-            <button className=" cursor-pointer w-full bg-[#3D63EA]  font-semibold text-sm text-white px-4 md:px-6 py-2 rounded-lg">
+            <a href="#contact" className=" cursor-pointer w-full bg-[#3D63EA]  font-semibold text-sm text-white px-4 md:px-6 py-2 rounded-lg">
               Contact us
-            </button>
+            </a>
           </div>
         </div>
       </nav>

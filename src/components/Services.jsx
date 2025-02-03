@@ -31,7 +31,7 @@ function Services() {
             At Cloud Fusion, we specialize in delivering innovative digital solutions to help you elevate your digital realm. Explore our services below:
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1400px] px-4">
+        <div className="grid grid-cols-1 place-items-center  md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1400px] px-4">
           {servicesData.map((service, index) => (
             <div
               key={index}
