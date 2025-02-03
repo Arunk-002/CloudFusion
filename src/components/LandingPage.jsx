@@ -17,9 +17,9 @@ function LandingPage() {
             <p className="text-[#4A5568] w-[90%] sm:w-[80%]">
               We design and deliver cutting-edge digital solutions to help your business thrive. From stunning websites to scalable cloud systems, we bring your vision to life.
             </p>
-            <button className="bg-[#3D63EA] mt-4 py-3 px-6 text-white rounded-lg hover:bg-blue-700 transition-all">
+            <a  href="#contact" className="bg-[#3D63EA] mt-4 py-3 px-6 text-white rounded-lg hover:bg-blue-700 transition-all">
               Let's Build Something Great!
-            </button>
+            </a>
           </div>
         </div>
 

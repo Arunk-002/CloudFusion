@@ -47,7 +47,7 @@ const cards = [
 
 function LifeCycle() {
   return (
-    <div id="approach" className=" max-w-[1200px] mx-auto my-10">
+    <div  className=" max-w-[1200px] mx-auto my-10">
       <div className="w-full flex flex-col items-center gap-y-16">
         {/* Heading */}
         <div className="flex flex-col items-center text-center gap-y-3">

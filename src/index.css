@@ -13,6 +13,31 @@
     --color-secondary-color:#0353A4;
 }
 
+/* Keyframe for fade-in effect */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Adds a slight upward movement */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the fade-in effect to elements */
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* Optional: For lazy loading, you can make it visible after page scroll */
+  .lazy-loaded {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+  }
+  
+
 
 @layer base {
     body {

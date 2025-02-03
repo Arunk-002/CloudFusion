@@ -11,7 +11,7 @@ function Footer() {
     <>
     {/* cloudfusion.official@gmail.com */}
       <footer className="flex flex-col space-y-10 justify-center m-10">
-        <nav className="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+        {/* <nav className="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
           <a href="" className="hover:text-gray-900" >
             Home
           </a>
@@ -24,7 +24,7 @@ function Footer() {
           <a href="#approach" className="hover:text-gray-900">
             Contact
           </a>
-        </nav>
+        </nav> */}
 
         <div className="flex justify-center space-x-5">
           <a
@@ -70,7 +70,7 @@ function Footer() {
              rel="noopener noreferrer"><MdAttachEmail /></a>
         </div>
         <p className="text-center text-gray-700 font-medium">
-          &copy; 2022 Company Ltd. All rights reservered.
+          &copy; 2025 Cloud Fusion Ltd. All rights reservered.
         </p>
       </footer>
     </>

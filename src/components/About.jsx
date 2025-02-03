@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="max-w-[1200px] mx-auto px-4 my-20">
+    <div  className="max-w-[1200px] mx-auto px-4 my-20">
       <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-12">
         {/* Left Section: Image */}
         <div className="lg:w-1/2 flex justify-center">

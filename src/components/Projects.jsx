@@ -6,25 +6,25 @@ const Projects = () => {
     {
       name: "CloudSync",
       description: "A cloud storage solution for seamless file management.",
-      links: [{ name: "View Project", link: "/cloudsync" }],
-      banner: "/projectBanners/cloudsync.png",
+      links: [{ name: "View Project", link: "https://github.com/Janees1010?tab=repositories" }],
+      banner: "/projectBanners/cloudy.png",
     },
     {
       name: "E-Commerce Platform",
       description: "A scalable e-commerce platform with advanced analytics.",
-      links: [{ name: "View Project", link: "/ecommerce" }],
-      banner: "/projectBanners/ecommerce.png",
+      links: [{ name: "View Project", link: "https://github.com/Janees1010?tab=repositories" }],
+      banner: "/projectBanners/hoolio.png",
     },
     {
       name: "FormFlow",
       description: "An intuitive form builder for businesses and individuals.",
-      links: [{ name: "View Project", link: "/formflow" }],
-      banner: "/projectBanners/formflow.png",
+      links: [{ name: "View Project", link: "https://github.com/Janees1010?tab=repositories" }],
+      banner: "/projectBanners/formBuilder.png",
     },
   ];
 
   return (
-    <div id="projects" className="max-w-[1200px] my-10 mx-auto px-4">
+    <div  className="max-w-[1200px] my-10 mx-auto px-4">
       {/* Heading */}
       <div className="flex flex-col items-center text-center gap-y-3">
         <hr className="w-1/3 sm:w-1/4 md:w-1/5 h-0.5 bg-gradient-to-r from-pink-500 to-violet-900 mt-3 border-none" />

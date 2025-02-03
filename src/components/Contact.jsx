@@ -65,9 +65,9 @@ const ContactUs = () => {
   };
   
   return (
-    <div className="my-10 px-4">
+    <div  className="my-10 px-4">
       <h1 className="text-4xl text-center font-bold">Contact Us</h1>
-      <div className="max-w-[600px] mx-auto px-6 py-10 bg-white rounded-xl shadow-lg">
+      <div className="max-w-[600px] mx-auto px-6 py-10 bg-white rounded-xl ">
         <form onSubmit={handleSubmit} className="flex flex-col gap-y-5 mt-4">
           <div className="flex flex-col sm:flex-row gap-3">
             <div className="w-full">
@@ -124,8 +124,9 @@ const ContactUs = () => {
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
-            className="p-3 bg-[#F7F7FA] rounded-lg w-full"
+            className="p-3 bg-[#F7F7FA] rounded-lg w-full min-h-[100px]"
             rows="4"
+            minLength="4"
           ></textarea>
           {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
 

@@ -9,35 +9,45 @@ import Footer from "./Footer";
 import Projects from "./Projects";
 import About from "./About";
 import ContactUs from "./Contact";
+
 function Home() {
   return (
     <>
       <Navbar />
-      <section className="border-y border-[#E7DAED]">
+      
+      <section id="home" className="border-y border-[#E7DAED] fade-in md:py-10">
         <LandingPage />
       </section>
-      <section className="">
-        <About/>
+      
+      <section id="about" className="fade-in">
+        <About />
       </section>
-      <section className="border-y border-[#E7DAED]">
+
+      <section id="service" className="border-y border-[#E7DAED] fade-in">
         <Services />
       </section>
-      <section className="border-y border-[#E7DAED] bg-[#F7F7FA]">
+
+      <section id="approach" className="border-y border-[#E7DAED] bg-[#F7F7FA] fade-in">
         <LifeCycle />
       </section>
-      <section className="bg-[#F7F7FA]">
+
+      <section id="projects" className="bg-[#F7F7FA] fade-in">
         <Projects />
       </section>
-      <section className="border-y border-[#E7DAED]">
+
+      <section id="stack" className="border-y border-[#E7DAED] fade-in">
         <Stack />
       </section>
-      <section className="border-y border-[#E7DAED]">
-        <HireBanner/>
+
+      <section className="border-y border-[#E7DAED] fade-in">
+        <HireBanner />
       </section>
-      <section>
-         <ContactUs  />
+
+      <section id="contact" className="fade-in">
+        <ContactUs />
       </section>
-      <Footer/>
+      
+      <Footer />
     </>
   );
 }

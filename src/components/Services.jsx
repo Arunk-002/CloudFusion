@@ -23,7 +23,7 @@ const servicesData = [
 
 function Services() {
   return (
-    <div id="service" className="w-full my-26">
+    <div  className="w-full my-26">
       <div className="flex flex-col justify-center items-center gap-y-22">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold">Services We Offer</h1>

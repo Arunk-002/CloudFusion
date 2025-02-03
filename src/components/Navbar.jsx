@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-white drop-shadow-xl fixed w-full z-50">
+      <nav className="bg-white drop-shadow-xl  fixed w-full z-50">
         <div className="max-md:px-2 mx-auto  w-full  md:px-6 lg:px-8">
           <div className="relative flex h-20 items-center justify-between ">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -30,48 +30,49 @@ export default function Navbar() {
                   src="/projectBanners/logo.png"
                   alt="Your Company"
                 />
-                <p className="text-primary-color font-semibold">Cloud Fusion</p>
+                <a href="#home" className="text-primary-color font-semibold">Cloud Fusion</a>
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex md:space-x-4 space-x-1 ">
+                  
                   <a
-                    href="#"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline hover:text-secondary-color hover:font-semibold decoration-black decoration-2  underline-offset-8"
+                    href="#about"
+                  >
+                    About
+                  </a>
+                  <a
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline hover:text-secondary-color hover:font-semibold decoration-black decoration-2  underline-offset-8"
                     href="#service"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
                   >
                     Services
                   </a>
                   <a
-                    href="#"
+
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline hover:text-secondary-color hover:font-semibold decoration-black decoration-2  underline-offset-8"
                     href="#projects"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
-                  >
+                    >
                     Projects
                   </a>
                   <a
-                    href="#"
+
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline hover:text-secondary-color hover:font-semibold decoration-black decoration-2  underline-offset-8"
                     href="#approach"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
-                  >
+                     >
                     Approach
                   </a>
                   <a
-                    href="#"
+                    
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline hover:text-secondary-color hover:font-semibold decoration-black decoration-2  underline-offset-8"
-                    href="#stack"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
-                  >
+                    href="#stack" >
                     Stack
                   </a>
                 </div>
               </div>
               <div className="hidden sm:block sm:self-center">
-                <button className="cursor-pointer bg-[#3D63EA] hover:bg-[#0353A4]  font-semibold text-sm text-white px-4 md:px-6 py-2 rounded-lg">
+                <a href="#contact" className="cursor-pointer bg-[#3D63EA] hover:bg-[#0353A4]  font-semibold text-sm text-white px-4 md:px-6 py-2 rounded-lg">
                   Contact us
-                </button>
+                </a>
               </div>
             </div>
           </div>

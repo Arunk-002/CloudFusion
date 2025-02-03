@@ -11,9 +11,9 @@ function HireBanner() {
         </div>
         <div className="md:relative flex flex-col items-center justify-center mt-6 md:mt-0">
           <img className="md:absolute md:block hidden" src="/Group 40.png" alt="" />
-          <button className="bg-gradient-to-r from-[#F16063] to-[#FFC656] px-6 sm:px-8 md:px-10 py-2 sm:py-2.5 md:py-3 text-white font-semibold w-full rounded-sm text-sm sm:text-base md:text-lg">
+          <a href="#contact" className="bg-gradient-to-r from-[#F16063] to-[#FFC656] px-6 sm:px-8 md:px-10 py-2 sm:py-2.5 md:py-3 text-white font-semibold w-full rounded-sm text-sm sm:text-base md:text-lg">
             Hire Top Developers
-          </button>
+          </a>
         </div>
       </div>
     </div>
