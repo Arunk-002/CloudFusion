@@ -6,6 +6,7 @@ import Services from "./Services";
 import LifeCycle from "./LifeCycle";
 import HireBanner from "./HireBanner";
 import Footer from "./Footer";
+import Projects from "./Projects";
 function Home() {
   return (
     <>
@@ -16,11 +17,14 @@ function Home() {
       <section className="border-y border-[#E7DAED]">
         <Services />
       </section>
-      <section className="border-y border-[#E7DAED]">
-        <Stack />
-      </section>
       <section className="border-y border-[#E7DAED] bg-[#F7F7FA]">
         <LifeCycle />
+      </section>
+      <section>
+        <Projects />
+      </section>
+      <section className="border-y border-[#E7DAED]">
+        <Stack />
       </section>
       <section className="border-y border-[#E7DAED]">
         <HireBanner/>
