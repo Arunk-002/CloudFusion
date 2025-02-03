@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-white drop-shadow-xl">
+      <nav className="bg-white drop-shadow-xl fixed w-full z-50">
         <div className="max-md:px-2 mx-auto  w-full  md:px-6 lg:px-8">
           <div className="relative flex h-20 items-center justify-between ">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -27,42 +27,49 @@ export default function Navbar() {
               <div className="flex shrink-0 items-center sm:gap-x-3 cursor-pointer">
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                  src="/projectBanners/logo.png"
                   alt="Your Company"
                 />
-                <p className="">Company Name</p>
+                <p className="text-primary-color font-semibold">Cloud Fusion</p>
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex md:space-x-4 space-x-1 ">
                   <a
+                    href="#"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline hover:text-secondary-color hover:font-semibold decoration-black decoration-2  underline-offset-8"
                     href="#service"
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
                   >
                     Services
                   </a>
                   <a
+                    href="#"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline hover:text-secondary-color hover:font-semibold decoration-black decoration-2  underline-offset-8"
                     href="#projects"
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
                   >
                     Projects
                   </a>
                   <a
+                    href="#"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline hover:text-secondary-color hover:font-semibold decoration-black decoration-2  underline-offset-8"
                     href="#approach"
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
                   >
                     Approach
                   </a>
                   <a
+                    href="#"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline hover:text-secondary-color hover:font-semibold decoration-black decoration-2  underline-offset-8"
                     href="#stack"
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
                   >
-                     Stack
+                    Stack
                   </a>
-                  
                 </div>
               </div>
               <div className="hidden sm:block sm:self-center">
-                <button className="cursor-pointer bg-gradient-to-r from-blue-600 via-violet-800 to-violet-800  font-semibold text-sm text-white px-4 md:px-6 py-2 rounded-lg">
+                <button className="cursor-pointer bg-[#3D63EA] hover:bg-[#0353A4]  font-semibold text-sm text-white px-4 md:px-6 py-2 rounded-lg">
                   Contact us
                 </button>
               </div>
@@ -71,7 +78,9 @@ export default function Navbar() {
         </div>
 
         <div
-          className={`${menuOpen ? "block" : "hidden"} absolute w-full sm:hidden bg-slate-100`}
+          className={`${
+            menuOpen ? "block" : "hidden"
+          } absolute w-full sm:hidden bg-slate-100`}
           id="mobile-menu"
         >
           <div className="space-y-3 px-2 pt-2 pb-3">
@@ -99,8 +108,8 @@ export default function Navbar() {
             >
               Calender
             </a>
-            
-            <button className=" cursor-pointer w-full bg-gradient-to-r from-blue-600 via-violet-800 to-violet-800  font-semibold text-sm text-white px-4 md:px-6 py-2 rounded-lg">
+
+            <button className=" cursor-pointer w-full bg-[#3D63EA]  font-semibold text-sm text-white px-4 md:px-6 py-2 rounded-lg">
               Contact us
             </button>
           </div>

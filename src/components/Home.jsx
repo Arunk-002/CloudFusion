@@ -7,13 +7,17 @@ import LifeCycle from "./LifeCycle";
 import HireBanner from "./HireBanner";
 import Footer from "./Footer";
 import Projects from "./Projects";
+import About from "./About";
 import ContactUs from "./Contact";
 function Home() {
   return (
     <>
       <Navbar />
-      <section>
+      <section className="border-y border-[#E7DAED]">
         <LandingPage />
+      </section>
+      <section className="">
+        <About/>
       </section>
       <section className="border-y border-[#E7DAED]">
         <Services />
