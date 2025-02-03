@@ -9,44 +9,61 @@ import Footer from "./Footer";
 import Projects from "./Projects";
 import About from "./About";
 import ContactUs from "./Contact";
+import UnblurOnScroll from "./UnblurOnScroll"; // Import the new component
 
 function Home() {
   return (
     <>
       <Navbar />
-      
-      <section id="home" className="border-y border-[#E7DAED] fade-in md:py-10">
-        <LandingPage />
-      </section>
-      
-      <section id="about" className="fade-in">
-        <About />
-      </section>
 
-      <section id="service" className="border-y border-[#E7DAED] fade-in">
-        <Services />
-      </section>
+      <UnblurOnScroll>
+        <section id="home" className="border-y border-[#E7DAED] md:py-10">
+          <LandingPage />
+        </section>
+      </UnblurOnScroll>
 
-      <section id="approach" className="border-y border-[#E7DAED] bg-[#F7F7FA] fade-in">
-        <LifeCycle />
-      </section>
+      <UnblurOnScroll>
+        <section id="about">
+          <About />
+        </section>
+      </UnblurOnScroll>
 
-      <section id="projects" className="bg-[#F7F7FA] fade-in">
-        <Projects />
-      </section>
+      <UnblurOnScroll>
+        <section id="service" className="border-y border-[#E7DAED]">
+          <Services />
+        </section>
+      </UnblurOnScroll>
 
-      <section id="stack" className="border-y border-[#E7DAED] fade-in">
-        <Stack />
-      </section>
+      <UnblurOnScroll>
+        <section id="approach" className="border-y border-[#E7DAED] bg-[#F7F7FA]">
+          <LifeCycle />
+        </section>
+      </UnblurOnScroll>
 
-      <section className="border-y border-[#E7DAED] fade-in">
-        <HireBanner />
-      </section>
+      <UnblurOnScroll>
+        <section id="projects" className="bg-[#F7F7FA]">
+          <Projects />
+        </section>
+      </UnblurOnScroll>
 
-      <section id="contact" className="fade-in">
-        <ContactUs />
-      </section>
-      
+      <UnblurOnScroll>
+        <section id="stack" className="border-y border-[#E7DAED]">
+          <Stack />
+        </section>
+      </UnblurOnScroll>
+
+      <UnblurOnScroll>
+        <section className="border-y border-[#E7DAED]">
+          <HireBanner />
+        </section>
+      </UnblurOnScroll>
+
+      <UnblurOnScroll>
+        <section id="contact">
+          <ContactUs />
+        </section>
+      </UnblurOnScroll>
+
       <Footer />
     </>
   );

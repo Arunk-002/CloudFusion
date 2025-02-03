@@ -63,6 +63,7 @@ const Projects = () => {
                     key={i}
                     className="py-2 px-4 rounded-md flex gap-2 items-center text-white hover:text-blue-300 transition"
                     href={l.link}
+                    target="_blank"
                   >
                     {l.name} <FaArrowRight />
                   </a>

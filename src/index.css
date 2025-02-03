@@ -25,16 +25,17 @@
     }
   }
   
-  /* Apply the fade-in effect to elements */
-  .fade-in {
-    animation: fadeIn 1s ease-out forwards;
+  .hidden-element {
+    filter: blur(10px);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
   }
   
-  /* Optional: For lazy loading, you can make it visible after page scroll */
-  .lazy-loaded {
-    visibility: visible;
+  .visible {
+    filter: blur(0);
     opacity: 1;
-    transition: opacity 0.6s ease-in-out;
+    transform: translateY(0);
   }
   
 

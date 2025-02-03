@@ -87,7 +87,7 @@ export default function Navbar() {
           <div className="space-y-3 px-2 pt-2 pb-3">
             <a
               href="#"
-              className="block rounded-md px-3 py-2 text-base font-medium text-[#4A5568] drop-shadow-2xl"
+              className="block rounded-md px- py-2 text-base font-medium text-[#4A5568] drop-shadow-2xl"
             >
               Dashboard
             </a>
