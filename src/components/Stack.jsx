@@ -26,7 +26,7 @@ function Stack() {
   ];
   return (
     <>
-      <div className=" max-w-[1200px]  mx-auto px-4 my-12">
+      <div id="stack" className=" max-w-[1200px]  mx-auto px-4 my-12">
         <div className="flex flex-col items-center gap-y-16">
           <div className="flex flex-col items-center text-center gap-y-3">
             <hr className="w-1/3 sm:w-1/4 md:w-1/5 h-0.5 bg-gradient-to-r from-pink-500 to-violet-900 mt-3 border-none" />

@@ -24,7 +24,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="max-w-[1200px] my-10 mx-auto px-4">
+    <div id="projects" className="max-w-[1200px] my-10 mx-auto px-4">
       {/* Heading */}
       <div className="flex flex-col items-center text-center gap-y-3">
         <hr className="w-1/3 sm:w-1/4 md:w-1/5 h-0.5 bg-gradient-to-r from-pink-500 to-violet-900 mt-3 border-none" />
@@ -39,7 +39,7 @@ const Projects = () => {
         {projects?.map((p, i) => (
           <div
             key={i}
-            className="relative shadow-md md:w-[70%] lg:w-[25%] sm:w-[70%] w-[90%] h-[350px] rounded-md overflow-hidden group flex flex-col justify-center items-center"
+            className="relative shadow-md md:w-[70%] lg:w-[45%] sm:w-[70%] w-[90%] h-[240px] rounded-md overflow-hidden group flex flex-col justify-center items-center"
           >
             {/* Background Image */}
             <div

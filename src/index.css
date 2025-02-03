@@ -29,3 +29,8 @@
 .custom-border {
     border-image: linear-gradient(to right, #ec4899, #c026d3) 1;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  

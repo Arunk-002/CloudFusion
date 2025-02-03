@@ -48,7 +48,7 @@ const cards = [
 
 function LifeCycle() {
   return (
-    <div className=" max-w-[1200px] mx-auto my-10">
+    <div id="approach" className=" max-w-[1200px] mx-auto my-10">
       <div className="w-full flex flex-col items-center gap-y-16">
         <div className="flex flex-col items-center text-center gap-y-3">
           <hr className="w-1/3 sm:w-1/4 md:w-1/5 h-0.5 bg-gradient-to-r from-pink-500 to-violet-900 mt-3 border-none" />

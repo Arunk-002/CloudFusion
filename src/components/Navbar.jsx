@@ -35,28 +35,28 @@ export default function Navbar() {
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex md:space-x-4 space-x-1 ">
                   <a
-                    href="#"
+                    href="#service"
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
                   >
-                    Dashboard
+                    Services
                   </a>
                   <a
-                    href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
-                  >
-                    Team
-                  </a>
-                  <a
-                    href="#"
+                    href="#projects"
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
                   >
                     Projects
                   </a>
                   <a
-                    href="#"
+                    href="#approach"
                     className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
                   >
-                    Calendar
+                    Approach
+                  </a>
+                  <a
+                    href="#stack"
+                    className="rounded-md px-3 py-2 text-sm font-medium text-[#4A5568] hover:underline decoration-black decoration-2  underline-offset-8"
+                  >
+                     Stack
                   </a>
                   
                 </div>
