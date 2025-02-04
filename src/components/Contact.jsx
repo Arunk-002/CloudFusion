@@ -132,7 +132,7 @@ const ContactUs = () => {
 
           <button
             type="submit"
-            className="bg-gradient-to-r from-blue-600 via-violet-800 to-violet-800 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-all"
+            className=" bg-primary-color hover:bg-secondary-color focus-within:bg-secondary-color text-white py-3 px-6 rounded-lg  transition-all"
             disabled={loading}
           >
             {loading ? "Submitting..." : "Submit"}

@@ -23,7 +23,7 @@ const servicesData = [
 
 function Services() {
   return (
-    <div  className="w-full my-26">
+    <div className="w-full my-26">
       <div className="flex flex-col justify-center items-center gap-y-22">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold">Services We Offer</h1>
@@ -31,17 +31,24 @@ function Services() {
             At Cloud Fusion, we specialize in delivering innovative digital solutions to help you elevate your digital realm. Explore our services below:
           </p>
         </div>
-        <div className="grid grid-cols-1 place-items-center  md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1400px] px-4">
+        <div className="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1400px] px-4">
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="group shadow-2xl border-2 border-transparent px-6 py-8 flex flex-col max-w-[500px] w-full gap-y-10 rounded-lg transition-transform transform hover:translate-y-2 hover:text-[#A02F7D]"
+              tabIndex={0} // Makes the div focusab
+              className="group shadow-2xl border-2 border-transparent px-6 py-8 flex flex-col max-w-[500px] w-full gap-y-10 rounded-lg 
+                        transition-transform transform hover:translate-y-2 focus:translate-y-2 active:translate-y-2"
             >
               <div className="flex flex-col gap-y-6">
-                <div className="  group-hover:border-[#0353A4] rounded-full w-[70px] h-[70px] p-1 flex justify-center items-center">
-                  <img src={service.icon} className="object-contain grayscale group-hover:grayscale-0" alt="" />
+                <div className="rounded-full w-[70px] h-[70px] p-1 flex justify-center items-center">
+                  <img
+                    src={service.icon}
+                    className="object-contain grayscale group-hover:grayscale-0 group-focus:grayscale-0 group-active:grayscale-0"
+                    alt=""
+                  />
                 </div>
-                <h2 className="group-hover:text-primary-color text-[#2D3748] bg-clip-text font-medium text-2xl">
+                <h2 className="text-[#2D3748] bg-clip-text font-medium text-2xl 
+                              group-hover:text-primary-color group-focus:text-primary-color group-active:text-primary-color">
                   {service.title}
                 </h2>
               </div>
@@ -55,5 +62,6 @@ function Services() {
     </div>
   );
 }
+
 
 export default Services;

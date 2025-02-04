@@ -24,7 +24,7 @@ const Projects = () => {
   ];
 
   return (
-    <div  className="max-w-[1200px] my-10 mx-auto px-4">
+    <div className="max-w-[1200px] my-10 mx-auto px-4">
       {/* Heading */}
       <div className="flex flex-col items-center text-center gap-y-3">
         <hr className="w-1/3 sm:w-1/4 md:w-1/5 h-0.5 bg-gradient-to-r from-pink-500 to-violet-900 mt-3 border-none" />
@@ -42,26 +42,30 @@ const Projects = () => {
         {projects?.map((p, i) => (
           <div
             key={i}
-            className="relative shadow-md md:w-[70%] lg:w-[45%] sm:w-[70%] w-[90%] h-[240px] rounded-md overflow-hidden group flex flex-col justify-center items-center"
+            tabIndex={0} // Makes it focusable
+            className="relative shadow-md md:w-[70%] lg:w-[45%] sm:w-[70%] w-[90%] h-[240px] rounded-md overflow-hidden group flex flex-col justify-center items-center focus:outline-none"
           >
             {/* Background Image */}
             <div
-              className="absolute inset-0 bg-contain bg-no-repeat bg-center transition-all duration-300 group-hover:blur-md"
+              className="absolute inset-0 bg-contain bg-no-repeat bg-center transition-all duration-300 group-hover:blur-md group-focus:blur-md group-active:blur-md"
               style={{ backgroundImage: `url(${p.banner})` }}
             ></div>
 
             {/* Overlay to ensure text remains readable */}
-            <div className="absolute inset-0 group-hover:bg-black/70 transition-all duration-300"></div>
+            <div className="absolute inset-0 group-hover:bg-black/70 group-focus:bg-black/70 group-active:bg-black/70 transition-all duration-300"></div>
 
             {/* Content (Initially Hidden) */}
-            <div className="relative sm:opacity-0 p-6 h-full w-full flex flex-col justify-center items-center text-white translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center">
+            <div className="relative opacity-0 p-6 h-full w-full flex flex-col justify-center items-center text-white translate-y-5 
+                group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100 
+                group-hover:translate-y-0 group-focus:translate-y-0 group-active:translate-y-0 
+                transition-all duration-300 text-center">
               <p className="text-xl font-semibold">{p.name}</p>
               <p className="text-gray-300 mt-2">{p.description}</p>
               <div className="flex gap-4 mt-4 absolute right-5 bottom-[10px]">
                 {p.links.map((l, i) => (
                   <a
                     key={i}
-                    className="py-2 px-4   text-black/30 rounded-md flex gap-2 items-center  hover:text-blue-300 transition"
+                    className="py-2 px-4 rounded-md flex gap-2 items-center hover:text-blue-300 focus:text-blue-300 active:text-blue-300 transition"
                     href={l.link}
                     target="_blank"
                   >
